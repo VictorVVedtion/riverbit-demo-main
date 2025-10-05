@@ -1,0 +1,18 @@
+{
+  "name": "riverbit-bridge",
+  "version": "1.0.0",
+  "description": "RiverBit Arbitrum Sepolia Bridge Adapter",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network arbitrumSepolia",
+    "deploy:local": "hardhat run scripts/deploy.js --network hardhat",
+    "verify": "hardhat verify --network arbitrumSepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "dotenv": "^16.4.1",
+    "hardhat": "^2.19.4"
+  }
+}
